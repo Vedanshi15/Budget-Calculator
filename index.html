@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Budget Calculator</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- LINEARICONS -->
+		<link rel="stylesheet" href="fonts/linearicons/style.css">
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.css">
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="css/style.css">		
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="inner">
+				<div class="image-holder">
+					<img src="images/form-wizard.png" alt="Background Image">
+					<h3>Budget Calculator</h3>          			
+				</div>
+            	<div id="wizard">
+					<div id="section1">
+		    			<h4 class="hidden">Calculation</h4>
+						<div class="form-row">
+							<div class="form-holder">
+                				<div>Total Expenses <span id="expenses"></span></div>              
+							</div>
+							<div class="form-holder">
+								<div>Saving <span id="savedincome"></span></div>
+							</div>
+						</div>				
+		  			</div>
+					<div id="reset">
+		    			<h4 class="hidden">Reset Button</h4>
+						<div class="form-row">							
+							<a href="index.html">Reset &nbsp; <i class="zmdi zmdi-refresh"></i></a>							
+						</div>							
+		  			</div> 
+
+            		<!-- SECTION 1 -->
+	                <h4>Monthly Income <span id="span1"></span></h4>      
+	                <section>
+						<div class="form-row">
+							<div class="form-holder">
+                				<label for="salary" class="hidden">Salary</label>
+                				<input id="salary" type="text" name="salary"  class="form-control" placeholder="Salary"/>                
+							</div>
+							<div class="form-holder">
+								<label for="otherincome" class="hidden">Other Income</label>		
+                				<input id="otherincome" type="text" name="otherincome"  class="form-control" placeholder="Other Income"/> 
+							</div>
+						</div>						
+	                </section>
+
+					<!-- SECTION 2 -->
+	                <h4>Housing Expenses <span id="span2"></span></h4>
+	                <section>
+                		<div class="form-wrapper">
+                			<div class="form-row">
+                				<div class="form-holder">
+									<label for="mortgage" class="hidden">Mortgage</label>		
+			  						<input id="mortgage" type="text" name="mortgage"  class="form-control" placeholder="Mortgage"/>
+								</div>
+								<div class="form-holder">
+									<label for="rent" class="hidden">Rent</label>		
+			  						<input id="rent" type="text" name="rent"  class="form-control" placeholder="Rent"/>
+								</div>
+                			</div>
+                			<div class="form-row">
+                				<div class="form-holder">
+									<label for="maintenance" class="hidden">Maintenance</label>		
+			  						<input id="maintenance" type="text" name="maintenance"  class="form-control" placeholder="Repairs/Maintenance"/>  
+								</div>
+								<div class="form-holder">
+									<label for="homeinsurance" class="hidden">HomeInsurance</label>		
+			  						<input id="homeinsurance" type="text" name="homeinsurance"  class="form-control" placeholder="Home Insurance"/>
+								</div>
+                			</div>
+                			<div class="form-row">
+								<div class="form-holder">
+									<label for="wge" class="hidden">Water/Gas/Electricity</label>		
+			  						<input id="wge" type="text" name="wge" class="form-control" placeholder="Water/Gas/Electricity"/> 
+								</div>
+								<div class="form-holder">
+									<label for="cti" class="hidden">Cable/TV/Internet</label>		
+			  						<input id="cti" type="text" name="cti"  class="form-control" placeholder="Cable/TV/Internet"/> 
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-holder">
+									<label for="pc" class="hidden">Phone/Cell</label>		
+			  						<input id="pc" type="text" name="pc"  class="form-control" placeholder="Phone/Cell"/>
+								</div>								
+							</div>
+                		</div>
+	                </section>
+
+	                <!-- SECTION 3 -->
+	                <h4>Transportation <span id="span3"></span></h4>
+	                <section>
+                    	<div class="form-row">
+							<div class="form-holder">
+								<label for="carpayment" class="hidden">Car Payment</label>		
+			  					<input id="carpayment" type="text" name="carpayment"  class="form-control" placeholder="Car Payment"/>
+							</div>
+							<div class="form-holder">
+								<label for="carinsurance" class="hidden">Car Insurance</label>		
+			  					<input id="carinsurance" type="text" name="carinsurance"  class="form-control" placeholder="Car Insurance"/> 
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-holder">
+								<label for="gf" class="hidden">Gas/Fuel</label>		
+			  					<input id="gf" type="text" name="gf" class="form-control" placeholder="Gas/Fuel"/> 
+							</div>
+							<div class="form-holder">
+								<label for="carrepairs" class="hidden">Car Repairs</label>		
+			  					<input id="carrepairs" type="text" name="carrepairs" class="form-control" placeholder="Car Repairs"/> 
+							</div>
+						</div>
+	                </section>
+
+	                <!-- SECTION 4 -->
+	                <h4>Educational <span id="span4"></span></h4>
+	                <section>
+						<div class="form-row">
+							<div class="form-holder">
+								<label for="ss" class="hidden">School Supplies</label>		
+			  					<input id="ss" type="text" name="ss"  class="form-control" placeholder="School Supplies"/>
+							</div>
+							<div class="form-holder">
+								<label for="sl" class="hidden">Student Loans</label>		
+			  					<input id="sl" type="text" name="sl"  class="form-control" placeholder="Student Loans"/>
+							</div>
+						</div>
+						<div class="form-row">							
+							<div class="form-holder">
+								<label for="ct" class="hidden">College Tuition</label>		
+								<input id="ct" type="text" name="ct" class="form-control" placeholder="College Tuition"/> 
+							</div>					
+						</div>	            		
+	                </section>
+
+					 <!-- SECTION 5 -->
+					 <h4>Food and Personal <span id="span5"></span></h4>
+					 <section>
+						 <div class="form-row">
+							 <div class="form-holder">
+								<label for="gh" class="hidden">Groceries/Household</label>		
+								<input id="gh" type="text" name="gh" class="form-control" placeholder="Groceries/Household"/>
+							 </div>
+							 <div class="form-holder">
+								<label for="entertainment" class="hidden">Entertainment</label>		
+								<input id="entertainment" type="text" name="entertainment" class="form-control" placeholder="Entertainment"/> 
+							 </div>
+						</div>
+						<div class="form-row">
+								 <div class="form-holder">
+									<label for="medical" class="hidden">Medical</label>		
+									<input id="medical" type="text" name="medical" class="form-control" placeholder="Medical"/> 
+								 </div>
+								 <div class="form-holder">
+									<label for="ps" class="hidden">Pet Supplies</label>		
+			  						<input id="ps" type="text" name="ps" class="form-control" placeholder="Pet Supplies"/> 
+								 </div>									 
+						 </div>
+						 <div class="form-row">
+							<div class="form-holder">
+								<label for="oe" class="hidden">Other Expenses</label>		
+			  					<input id="oe" type="text" name="oe" class="form-control" placeholder="Other Expenses"/> 
+							</div>
+						</div>
+					 </section>
+
+					 <!-- SECTION 6 -->
+					 <h4>Monthly Savings <span id="span6"></span></h4>
+					 <section>
+						 <div class="form-row">
+							<div class="form-holder">
+								<label for="ef" class="hidden">Emergency Fund</label>		
+								<input id="ef" type="text" name="ef" class="form-control" placeholder="Emergency Fund"/>
+							</div>
+							<div class="form-holder">
+								<label for="investments" class="hidden">Investments</label>		
+								<input id="investments" type="text" name="investments" class="form-control" placeholder="Investments"/> 
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-holder">
+								<label for="retirement" class="hidden">Retirement</label>		
+			  					<input id="retirement" type="text" name="retirement" class="form-control" placeholder="Retirement"/> 
+							</div>									 
+						 </div>
+					 </section>
+					
+					 <!-- SECTION 7 -->
+					 <h4>Total Savings</span></h4>
+					 <section>
+						 	<p> Thanks for Calculations !!</p>
+						 	<div class="form-row" id="goodincome">
+								<p>Great Job, You have excellent savings.</p>
+							</div>
+							<div class="form-row" id="enoughincome">
+								<p>You have enough savings.</p>
+							</div>
+							<div class="form-row" id="poorincome">
+								<p>You should save money.</p>
+							</div>
+							<div class="form-row" id="lessincome">
+								<p>You are spending more than your income.</p>
+							</div>
+					 </section>
+					<button class="forward" id="next">Next
+						<i class="zmdi zmdi-long-arrow-right"></i>
+					</button>
+            	</div>
+			</div>
+		</div>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<!-- JQUERY STEP -->
+		<script src="js/jquery.steps.js"></script>
+		<script src="js/main.js"></script>
+</body>
+</html>
