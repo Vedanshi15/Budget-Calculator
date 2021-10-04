@@ -8,5 +8,4 @@ The budget calculator calculate expenses and savings of users according to their
 * JQuery
 
 ### Screenshots
-![GitHub Logo](/Screenshots/Mobile.png)
 ![GitHub Logo](/Screenshots/Web.png)
